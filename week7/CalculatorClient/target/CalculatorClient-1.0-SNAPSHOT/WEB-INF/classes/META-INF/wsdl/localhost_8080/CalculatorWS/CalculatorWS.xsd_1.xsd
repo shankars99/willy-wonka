@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://calculator.me.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://calculator.me.org/">
+
+<xs:element name="add" type="tns:add"/>
+
+<xs:element name="addResponse" type="tns:addResponse"/>
+
+<xs:element name="div" type="tns:div"/>
+
+<xs:element name="divResponse" type="tns:divResponse"/>
+
+<xs:element name="mul" type="tns:mul"/>
+
+<xs:element name="mulResponse" type="tns:mulResponse"/>
+
+<xs:element name="prime" type="tns:prime"/>
+
+<xs:element name="primeResponse" type="tns:primeResponse"/>
+
+<xs:element name="root" type="tns:root"/>
+
+<xs:element name="rootResponse" type="tns:rootResponse"/>
+
+<xs:element name="sub" type="tns:sub"/>
+
+<xs:element name="subResponse" type="tns:subResponse"/>
+
+<xs:complexType name="prime">
+<xs:sequence>
+<xs:element name="i" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="primeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="div">
+<xs:sequence>
+<xs:element name="i" type="xs:double"/>
+<xs:element name="j" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="add">
+<xs:sequence>
+<xs:element name="i" type="xs:double"/>
+<xs:element name="j" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sub">
+<xs:sequence>
+<xs:element name="i" type="xs:double"/>
+<xs:element name="j" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="root">
+<xs:sequence>
+<xs:element name="i" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rootResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mul">
+<xs:sequence>
+<xs:element name="i" type="xs:double"/>
+<xs:element name="j" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mulResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

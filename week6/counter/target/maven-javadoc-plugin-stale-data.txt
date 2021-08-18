@@ -1,0 +1,55 @@
+@options
+@packages
+-classpath
+'/home/shankar/.m2/repository/javax/javaee-api/8.0/javaee-api-8.0.jar:/home/shankar/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar:/home/shankar/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'counter 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'counter 1.0-SNAPSHOT API'
+com.mycompany.counter.resources
+com.mycompany.counter
+/home/shankar/.m2/repository/javax/javaee-api/8.0/javaee-api-8.0.jar = 1619979514755
+/home/shankar/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar = 1619979514459
+/home/shankar/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar = 1619940743318
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/src/main/java = 1617611666251
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/overview-tree.html = 1622778036647
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/index.html = 1622778036727
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/package-search-index.zip = 1622778036667
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/stylesheet.css = 1622778036747
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/type-search-index.js = 1622778036667
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/help-doc.html = 1622778036743
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/script.js = 1622778036747
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/deprecated-list.html = 1622778036699
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/member-search-index.js = 1622778036671
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/package-search-index.js = 1622778036663
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/member-search-index.zip = 1622778036671
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/allclasses-index.html = 1622778036691
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/constant-values.html = 1622778036547
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/element-list = 1622778036463
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/search.js = 1622778036751
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/allpackages-index.html = 1622778036691
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/serialized-form.html = 1622778036575
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/type-search-index.zip = 1622778036667
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/index-all.html = 1622778036671
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/allclasses.html = 1622778036703
+/home/shankar/Documents/AU/sem6/integrated-programming/lab/week6/counter/target/site/apidocs/overview-summary.html = 1622778036735

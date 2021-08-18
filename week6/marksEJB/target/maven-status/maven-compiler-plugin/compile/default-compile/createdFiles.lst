@@ -1,0 +1,5 @@
+com/mycompany/marksejb/markEntryRemote.class
+com/mycompany/marksejb/JAXRSConfiguration.class
+com/mycompany/marksejb/resources/JavaEE8Resource.class
+com/mycompany/marksejb/markEntry.class
+com/mycompany/marksejb/addEntry.class

@@ -1,0 +1,12 @@
+com/mycompany/mainpages/HomePage.class
+com/mycompany/billEJB/Item.class
+com/mycompany/billEJB/Bill.class
+com/mycompany/DBStuff/DBStuff.class
+com/mycompany/mainpages/Catalogue.class
+com/mycompany/marketplace/Payment.class
+com/mycompany/billEJB/BillRemote.class
+com/mycompany/marketplace/Login.class
+com/mycompany/marketplace/resources/JavaEE8Resource.class
+com/mycompany/DBStuff/DBStuffRemote.class
+com/mycompany/mainpages/Checkout.class
+com/mycompany/marketplace/Profile.class

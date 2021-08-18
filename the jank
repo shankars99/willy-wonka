@@ -1,0 +1,39 @@
+servelts go into source/default/...
+webpages go into webpages/ called index.*
+the web.xml [click create when making servlet] is in webpages/web-inf
+
+to add sql and other libraries, goto [https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.23]
+and [jakarta.servlet.jsp.jstl]
+copy paste that code into 
+<dependencies>
+    <dependency>
+    
+located in pom.xml, then build (refer: https://stackoverflow.com/questions/17693040/adding-external-jar-to-maven-project-in-netbeans)  
+https://stackoverflow.com/questions/4928271/how-to-install-jstl-the-absolute-uri-http-java-sun-com-jstl-core-cannot-be-r
+
+for jsf
+create the web and then right click the project and goto frameworks and add jsf 2.3
+then create CDI javas and jsf pages
+
+ex: in the jsf calc.Add corresponds to java
+class Calculator (lower casing on the jsf)
+and function Add
+
+
+ejbtutorial.com/programming/simple-servlet-and-jsp-examples-using-eclipse-and-jboss-as
+for EJB
+
+
+
+for webservices, create it using java 11 (change settings compile from default to java 11) then goto the java file and then install that web-services file
+
+when creating the client use java 1.8 and add
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+to the pom.xml

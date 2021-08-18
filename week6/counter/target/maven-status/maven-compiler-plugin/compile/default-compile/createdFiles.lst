@@ -1,0 +1,4 @@
+com/mycompany/counter/resources/JavaEE8Resource.class
+com/mycompany/counter/CounterBean.class
+com/mycompany/counter/JAXRSConfiguration.class
+com/mycompany/counter/Count.class

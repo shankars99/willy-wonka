@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 16, 2021 10:21:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypack.Employees" table="Employees" catalog="test" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="age" type="int">
+            <column name="age" not-null="true" />
+        </property>
+        <property name="first" type="string">
+            <column name="first" />
+        </property>
+        <property name="last" type="string">
+            <column name="last" />
+        </property>
+    </class>
+</hibernate-mapping>
