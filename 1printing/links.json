@@ -1,0 +1,21 @@
+{
+	"overview of SOA" : [
+		"https://www.javatpoint.com/what-is-web-service",
+		"https://www.tutorialspoint.com/soa/soa_overview.htm",
+		"https://www.ibm.com/in-en/cloud/learn/soa"						
+	],
+	
+	"overview of JWS" : [
+		"https://www.javatpoint.com/web-service-components"
+	],
+	
+	"WSDL SOAP XML mapping" : [
+		"https://www.w3schools.com/xml/xml_wsdl.asp",
+		"https://www.ibm.com/docs/en/was-nd/8.5.5?topic=dwfjra-mapping-between-java-language-wsdl-xml-jax-rpc-applications"
+	],
+	"JAXWS" : ["https://www.javatpoint.com/jax-ws-tutorial", "https://www.javatpoint.com/jaxb-tutorial"],
+	"JAXB" : ["https://www.tutorialspoint.com/java/xml/javax_xml_bind_jaxb.htm"],
+	"WS metadata" : ["https://docs.oracle.com/cd/E19355-01/820-1072/ahias/index.html"],
+	"SAAJ" : ["https://www.tutorialspoint.com/java/xml/javax_xml_soap_saajmetafactory.htm"],
+	"JAXR" : ["https://www.javatpoint.com/jax-rs-tutorial"]
+}
