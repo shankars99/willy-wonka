@@ -1,0 +1,104 @@
+<html>
+
+<body>
+    <script>
+        var headers = new Headers();
+
+        //setting the headers for the server communication because of CORS
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        headers.append('Origin', 'http://localhost:5000');
+
+        var flag = 0;
+        var key = 0;
+
+        function display(message) {
+            document.getElementById("message").innerHTML = message;
+            document.getElementById("ka").innerHTML = "";
+            document.getElementById("kb").innerHTML = "";
+
+        }
+
+        //converting the binary format to ASCII
+        function toAscii(input) {
+            var result = "";
+            var arr = input.match(/.{1,8}/g);
+            for (var i = 0; i < arr.length; i++) {
+                result += String.fromCharCode(parseInt(arr[i], 2).toString(10));
+            }
+            return result;
+        }
+
+        //encodes of decodes based on the pressed button
+        function coder(mode) {
+            display(mode)
+            fetch(`http://localhost:5000/${mode}/${key}`, {
+                mode: 'cors',
+                credentials: 'include',
+                method: 'GET',
+                headers: headers
+            }).then(function (response) {
+                return response.json();
+            }).then(function (jsonResponse) {
+                console.log(mode)
+                if (mode == "Encode") {
+                    //convert the binary stuff to ASCII
+                    display(toAscii(jsonResponse.message));
+                }
+                else {
+                    display(jsonResponse.message);
+                }
+            });
+        }
+
+        //generates the buttons after the key has been generated
+        function createButton(message) {
+            var button = document.createElement("BUTTON");
+            var buttonText = document.createTextNode(message);
+
+            button.setAttribute('onclick', 'coder("' + message + '")');
+            button.appendChild(buttonText);
+            document.body.appendChild(button);
+        }
+
+        //produces Ka and Kb based on the given public keys
+        function myFunction() {
+            key = document.getElementById("key").value;
+            fetch(`http://localhost:5000/getParam/${key}`, {
+                mode: 'cors',
+                credentials: 'include',
+                method: 'GET',
+                headers: headers
+            }).then(function (response) {
+                return response.json();
+            }).then(function (jsonResponse) {
+                display(jsonResponse.message)
+                if (jsonResponse.message == "ka and kb are:") {
+                    if (flag == 0) {
+                        //if no button is created then create the buttons
+                        createButton("Encode");
+                        createButton("Decode");
+                        flag = 1;
+                    } else if (jsonResponse.message == "'message': 'deleted session'") {
+                        flag = 0;
+                    }
+                    document.getElementById("ka").innerHTML = jsonResponse.ka;
+                    document.getElementById("kb").innerHTML = jsonResponse.kb;
+                    key = jsonResponse.kb;
+                }
+            });
+        }
+    </script>
+
+
+    <p>Enter the key:</p>
+    <p><input id="key" type="text" name="key" /></p>
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="message"></p>
+    <p id="ka"></p>
+    <p id="kb"></p>
+    <p id="coder"></p>
+</body>
+
+</html>
